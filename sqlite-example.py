@@ -8,6 +8,7 @@ REAL)''')
 cursor.execute("INSERT INTO students (name, grade) VALUES ('Alice', 85.5)")
 cursor.execute("SELECT * FROM students")
 rows = cursor.fetchall()
+for row in rows:
 print(row)
 connection.commit()
 connection.close()
